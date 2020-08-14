@@ -311,7 +311,7 @@ img {
 .logo img {
   vertical-align: bottom;
   margin-right: 0.5rem;
-  width: 27px;
+  width: 120px;
 }
 
 /*-----------------------------
@@ -3636,7 +3636,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   }
 }
 .logos_section .items .item-client img {
-  width: 100px;
+  width: 125px;
   -webkit-transition: 0.4s !important;
   -moz-transition: 0.4s !important;
   -o-transition: 0.4s !important;
