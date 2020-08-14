@@ -485,7 +485,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fef8f2;
+  background-color: #dee5fb;
   overflow: hidden;
   position: fixed;
   z-index: 999999;
@@ -497,8 +497,8 @@ img {
   position: relative;
 }
 .loading_overlay .loader_logo .logo {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: 60px;
   -webkit-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -moz-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
   -o-animation: text-focus-in 1.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both !important;
@@ -3059,11 +3059,11 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   demo_1
 -----------------------------*/
 .demo_1.banner_section {
-  background: #fef8f0;
-  background: -moz-linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #fef8f0 100%);
-  background: -webkit-linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #fef8f0 100%);
-  background: linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #fef8f0 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fef8f0",endColorstr="#fef8f0",GradientType=1);
+  background: #1868DF;
+  background: -moz-linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #1868DF 100%);
+  background: -webkit-linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #1868DF 100%);
+  background: linear-gradient(360deg, rgba(254, 248, 240, 0) 0%, #1868DF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1868DF",endColorstr="#1868DF",GradientType=1);
   height: 100%;
   padding-top: 10rem;
 }
@@ -3428,7 +3428,7 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   banner_demo7
 -----------------------------*/
 .banner_demo7 {
-  background: #ffe7aa !important;
+  background: #dee5fb !important;
   border-radius: 12px !important;
   margin-top: 5.625rem;
   padding-top: 0 !important;
@@ -4558,10 +4558,10 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   position: relative;
   overflow: hidden;
 }
-.feature_demo2 .z_apps {
+.feature_demo2 .z_apps, .banner_section .z_apps {
   margin: 2.5rem 0;
 }
-.feature_demo2 .z_apps .item__app {
+.feature_demo2 .z_apps .item__app, .banner_section .z_apps .item__app {
   padding: 0.8rem 1.25rem;
   border-radius: 12px;
   background-color: #0b2238;
@@ -4574,45 +4574,48 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   -ms-transition: 0.4s !important;
   transition: 0.4s !important;
 }
-.feature_demo2 .z_apps .item__app .icon {
+.feature_demo2 .z_apps .item__app .icon, .banner_section .z_apps .item__app .icon {
   font-size: 24px;
   width: 24px;
   color: #ffffff;
   margin: auto;
   margin-right: 1rem;
 }
-.feature_demo2 .z_apps .item__app .txt {
+.feature_demo2 .z_apps .item__app .txt, .banner_section .z_apps .item__app .txt {
   margin: auto;
   text-align: left;
 }
-.feature_demo2 .z_apps .item__app .txt span {
+.feature_demo2 .z_apps .item__app .txt span, .banner_section .z_apps .item__app .txt span {
   display: block;
   font-size: 12px;
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2px;
   font-weight: 400;
 }
-.feature_demo2 .z_apps .item__app .txt h4 {
+.feature_demo2 .z_apps .item__app .txt h4, .banner_section .z_apps .item__app .txt h4 {
   font-size: 18px;
   margin-bottom: 0;
   color: #ffffff;
   font-weight: 400;
 }
-.feature_demo2 .z_apps .item__app.bg_apple {
+.feature_demo2 .z_apps .item__app.bg_apple, .banner_section .z_apps .item__app.bg_apple {
   background-color: #6f5fa6;
 }
-.feature_demo2 .z_apps .item__app.bg_apple:hover {
+.feature_demo2 .z_apps .item__app.bg_apple:hover,
+.banner_section .z_apps .item__app.bg_apple:hover {
   -webkit-box-shadow: 0px 45px 40px -20px rgba(111, 95, 166, 0.25) !important;
   -moz-box-shadow: 0px 45px 40px -20px rgba(111, 95, 166, 0.25) !important;
   -o-box-shadow: 0px 45px 40px -20px rgba(111, 95, 166, 0.25) !important;
   -ms-box-shadow: 0px 45px 40px -20px rgba(111, 95, 166, 0.25) !important;
   box-shadow: 0px 45px 40px -20px rgba(111, 95, 166, 0.25) !important;
 }
-.feature_demo2 .z_apps .item__app.bg_google {
+.feature_demo2 .z_apps .item__app.bg_google,
+.banner_section .z_apps .item__app.bg_google {
   border: 1px solid rgba(11, 34, 56, 0.08);
   background-color: transparent;
 }
-.feature_demo2 .z_apps .item__app.bg_google:hover {
+.feature_demo2 .z_apps .item__app.bg_google:hover,
+.banner_section .z_apps .item__app.bg_google:hover {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 45px 40px -20px rgba(11, 34, 56, 0.09) !important;
   -moz-box-shadow: 0px 45px 40px -20px rgba(11, 34, 56, 0.09) !important;
@@ -4620,10 +4623,12 @@ header .navbar .navbar-collapse .nav_account.btn_demo3 .btn_sm_primary {
   -ms-box-shadow: 0px 45px 40px -20px rgba(11, 34, 56, 0.09) !important;
   box-shadow: 0px 45px 40px -20px rgba(11, 34, 56, 0.09) !important;
 }
-.feature_demo2 .z_apps .item__app.bg_google span {
+.feature_demo2 .z_apps .item__app.bg_google span,
+.banner_section .z_apps .item__app.bg_google span {
   color: rgba(11, 34, 56, 0.8);
 }
-.feature_demo2 .z_apps .item__app.bg_google h4 {
+.feature_demo2 .z_apps .item__app.bg_google h4,
+.banner_section .z_apps .item__app.bg_google h4 {
   color: #0b2238;
 }
 .feature_demo2 .app_mobile .apoo {
@@ -6844,7 +6849,7 @@ works_demo2
 .abo_company .gq_item.ill_item .ill_sec {
   margin: 3rem 0;
   width: 100%;
-  height: 200px;
+  height: 150px;
   object-fit: contain;
 }
 .abo_company .gq_item.ill_item .title_sections {
