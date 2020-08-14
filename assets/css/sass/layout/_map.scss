@@ -1,0 +1,39 @@
+/*
+    CSS Table of Sections
+    --------------------------
+    ** map_section
+    --------------------------
+
+*/
+
+/*-----------------------------
+  map_section
+-----------------------------*/
+.map_section {
+  position: relative;
+  .sg_pints {
+    .bg_pin {
+      position: absolute;
+      z-index: 2;
+      width: 11px;
+      height: 11px;
+      background-color: $red-color;
+      border-radius: 100px;
+      display: block;
+      &::before {
+        content: '';
+        position: absolute;
+        background: $red-color;
+        border-radius: 50%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0.25;
+        top: 0;
+        left: 0;
+        @include prefixer(animation, ripple-map 1.3s infinite cubic-bezier(0.29, -0.01, 0.17, 0.95), webkit moz o ms);
+      }
+    }
+  }
+}

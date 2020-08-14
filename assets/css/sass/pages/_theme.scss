@@ -1,0 +1,717 @@
+// Special codes for the main page of the show
+.nav_rakon {
+  position: absolute;
+  backdrop-filter: none !important;
+  .nav-pills {
+    .nav-item {
+      .nav-link {
+        color: $light-color !important;
+        &.active {
+          color: $dark-color !important;
+        }
+      }
+    }
+  }
+}
+.buy_theme {
+  padding: 0.9rem 1.65rem;
+  border-radius: 12px;
+  background-color: $blue-color;
+  color: $white-color;
+  font-size: 16px !important;
+  @include prefixer(transition, 0.3s, webkit moz o ms);
+  &:hover {
+    background-color: $dark-color;
+    color: $white-color;
+  }
+  img {
+    margin-right: 0.3rem;
+    width: 13px;
+    vertical-align: middle;
+  }
+}
+.fixed-header {
+  header {
+    &.nav_rakon {
+      .nav-pills {
+        .nav-item {
+          .nav-link {
+            &.active {
+              color: $dark-color !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.banner_rakon {
+  background-color: rgba($orange-color, 0.06) !important;
+  height: 100% !important;
+  padding-bottom: 12rem;
+  &::before {
+    content: "";
+    background-image: url("../img/rakon/grid.svg");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    position: absolute;
+    top: -2rem;
+    right: -3rem;
+    width: 100%;
+    height: 100%;
+  }
+  .banner_title {
+    .offer {
+      background-color: $beiget-color;
+      padding: 0.85rem 1.35rem;
+      border-radius: 12px;
+      width: max-content;
+      span {
+        font-size: 14px;
+      }
+    }
+    h1 {
+      color: $dark-color !important;
+      text-transform: capitalize;
+      @include maxMobile {
+        font-size: 40px;
+      }
+      span {
+        color: $blue-color;
+      }
+    }
+    .item_nb {
+      margin-top: 1.5rem;
+      p {
+        display: inline-block;
+        color: $dark-color !important;
+        margin-right: 1.5rem;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.device_section {
+  background-color: #05111c;
+  position: relative;
+  .overlay_curve {
+    position: relative;
+    overflow: hidden;
+    padding: 4rem 0;
+    z-index: 0;
+    &:before {
+      content: "";
+      @include overlay;
+      background-image: url("../img/rakon/curve.png");
+      background-repeat: no-repeat;
+      opacity: 0.3;
+      background-size: 100%;
+      bottom: 0;
+      @include maxMobile {
+        background-position: center;
+        background-size: cover;
+      }
+    }
+  }
+  .item_device {
+    position: absolute;
+    left: -5rem;
+    top: 4rem;
+    z-index: 1;
+    @include maxMobile {
+      left: auto;
+    }
+    img {
+      position: relative;
+      display: inline-block;
+      margin-right: 2rem;
+      margin-top: -13rem;
+      &:nth-of-type(1) {
+        width: 45%;
+        @include maxMobile {
+          width: 100%;
+          margin-right: 0;
+        }
+      }
+      &:nth-of-type(2) {
+        width: 30%;
+        @include maxMobile {
+          display: none;
+        }
+      }
+      &:nth-of-type(3) {
+        width: 11%;
+        @include maxMobile {
+          display: none;
+        }
+      }
+    }
+  }
+  .data_source {
+    margin-top: 19rem;
+    @include maxSmall {
+      margin-top: 6rem;
+    }
+    span {
+      font-size: 50px;
+      font-weight: 600;
+      color: $white-color;
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    img {
+      margin-bottom: 1.75rem;
+    }
+    h3 {
+      color: $white-color;
+      font-size: 30px;
+    }
+  }
+}
+.demos_section {
+  .item {
+    margin-bottom: 2.25rem;
+    .pic_show {
+      position: relative;
+      overflow: hidden;
+      background-color: $blue-color;
+      border-radius: 12px;
+      padding: 2.5rem;
+      height: 290px;
+      border: 4px solid$white-color;
+      @include prefixer(transition, 0.4s, webkit moz o ms);
+      img {
+        width: 100%;
+        @include prefixer(
+          transition,
+          0.35s cubic-bezier(0.46, 0.03, 0.52, 0.96),
+          webkit moz o ms
+        );
+        @include prefixer(
+          box-shadow,
+          0px 40px 50px 20px rgba(4, 36, 104, 0.1),
+          webkit moz o ms
+        );
+      }
+    }
+    .item_name {
+      margin-top: 1.5rem;
+      span {
+        display: block;
+        font-size: 14px;
+        color: $gray-color;
+        margin-bottom: 0.5rem;
+      }
+      h4 {
+        color: $dark-color;
+        font-weight: 600;
+        font-size: 16px;
+        margin-bottom: 1rem;
+      }
+      .btn {
+        padding: 0.6rem 1.5rem;
+        border-radius: 12px;
+        background-color: rgba($dark-color, 0.05);
+        color: $dark-color;
+        @include prefixer(transition, 0.3s, webkit moz o ms);
+        margin-right: 0.5rem;
+        &:hover {
+          background-color: $blue-color;
+          color: $white-color;
+        }
+      }
+    }
+    &:hover {
+      .pic_show {
+        @include prefixer(
+          box-shadow,
+          0px 50px 50px -30px rgba(4, 36, 104, 0.1),
+          webkit moz o ms
+        );
+        img {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .it__ems {
+    &:nth-of-type(2) {
+      .item {
+        .pic_show {
+          background-color: $beiget-color;
+        }
+      }
+    }
+    &:nth-of-type(3) {
+      .item {
+        .pic_show {
+          background-color: #f3ebf5;
+        }
+      }
+    }
+    &:nth-of-type(4) {
+      .item {
+        .pic_show {
+          background-color: #c083fd;
+        }
+      }
+    }
+    &:nth-of-type(5) {
+      .item {
+        .pic_show {
+          background-color: $red-color;
+        }
+      }
+    }
+    &:nth-of-type(6) {
+      .item {
+        .pic_show {
+          background-color: #eff3f7;
+        }
+      }
+    }
+    &:nth-of-type(7) {
+      .item {
+        .pic_show {
+          background-color: #6f5fa6;
+        }
+      }
+    }
+    &:nth-of-type(8) {
+      .item {
+        .pic_show {
+          background-color: $beiget-color;
+        }
+      }
+    }
+    &:nth-of-type(9) {
+      .item {
+        .pic_show {
+          background-color: $yollow-color;
+        }
+      }
+    }
+  }
+  .comming {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+    font-size: 18px;
+    font-weight: 600;
+    span {
+      width: 8px;
+      height: 16px;
+      background-color: $beiget-color;
+      border-radius: 3px;
+      display: inline-block;
+      margin-right: 0.3rem;
+      vertical-align: middle;
+      @include prefixer(
+        animation,
+        flicker-1 2s linear infinite both,
+        webkit moz o ms
+      );
+      color: $dark-color;
+    }
+  }
+}
+.components_section {
+  .bg_overlay {
+    background-color: #05111c;
+    position: relative;
+    overflow: hidden;
+    padding-top: 6rem;
+    padding-bottom: 15rem;
+    @include maxSmall {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    &:before {
+      content: "";
+      @include overlay;
+      background-image: url("../img/rakon/curve.png");
+      background-repeat: no-repeat;
+      opacity: 0.3;
+      background-size: 100%;
+      bottom: 0;
+      @include maxMobile {
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    .title_sections {
+      margin-bottom: 2rem;
+      h3 {
+        color: $white-color;
+        display: inline-block;
+      }
+      span {
+        background-color: $red-color;
+        border-radius: 8px;
+        padding: 0.3rem 0.85rem;
+        font-size: 13px;
+        font-weight: 400;
+        color: $white-color;
+        display: inline-block;
+        vertical-align: super;
+        margin-left: 0.5rem;
+      }
+    }
+    .item_product {
+      .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgba($white-color, 0.15);
+        color: $white-color;
+        border-radius: 22px;
+        margin-right: 1rem;
+        .tio {
+          font-size: 24px;
+        }
+      }
+      .txt {
+        margin-top: 0.4rem;
+        h5 {
+          color: $white-color;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        p {
+          color: $light-color;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .item_card {
+    margin-top: -13rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+.feat_section {
+  background-color: rgba($orange-color, 0.06) !important;
+  margin-top: -18rem !important;
+  padding-top: 23rem !important;
+  padding-bottom: 3.5rem !important;
+  @include maxSmall {
+    margin-top: 0 !important;
+    padding-top: 3.5rem !important;
+    padding-bottom: 3rem !important;
+  }
+  .item_pro {
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    @include maxSmall {
+      padding-right: 0;
+    }
+    .icon_t {
+      background-color: $beiget-color !important;
+      border-radius: 22px !important;
+      color: $dark-color !important;
+      margin-bottom: 1.25rem;
+      img {
+        width: 22px;
+      }
+      .anime_svg {
+        .opac {
+          @include prefixer(
+            animation,
+            flash linear 4.5s infinite,
+            webkit moz o ms
+          );
+        }
+        .opac01 {
+          @include prefixer(
+            animation,
+            flash linear 6.5s infinite,
+            webkit moz o ms
+          );
+        }
+        .opac02 {
+          @include prefixer(
+            animation,
+            flash linear 11.5s infinite,
+            webkit moz o ms
+          );
+        }
+
+        .opac04 {
+          @include prefixer(
+            animation,
+            flash linear 8.5s infinite,
+            webkit moz o ms
+          );
+        }
+        .opac05 {
+          @include prefixer(
+            animation,
+            flash linear 3.5s infinite,
+            webkit moz o ms
+          );
+        }
+      }
+      svg {
+        rect {
+          fill: $dark-color;
+        }
+      }
+    }
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}
+.showcase {
+  .images_desc {
+    &:before {
+      display: none;
+    }
+    img {
+      &:first-of-type {
+        width: 390px;
+        margin-right: 1.5rem;
+        @include maxMobile {
+          width: 100%;
+          margin: 0;
+        }
+      }
+      &:last-of-type {
+        width: 150px;
+      }
+    }
+  }
+  .title_sections {
+    margin-bottom: 2rem;
+  }
+  .btn_buy {
+    border-radius: 12px;
+    padding: 0.85rem 1.8rem;
+    &:hover {
+      background-color: $dark-color;
+    }
+  }
+}
+.purchase_section {
+  background-color: rgba($orange-color, 0.06);
+  padding: 4rem 0;
+  .price_item {
+    .txt {
+      h3 {
+        color: $dark-color;
+        font-size: 50px;
+        font-weight: 600;
+        sup {
+          font-size: 25px;
+        }
+      }
+      p {
+        color: $gray-color;
+        font-size: 16px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.footer_rakon {
+  background-color: #05111c;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 0;
+  &:before {
+    content: "";
+    @include overlay;
+    background-image: url("../img/rakon/curve.png");
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    background-size: 100%;
+    bottom: 0;
+    z-index: 0;
+    background-position: 0px -230px;
+    @include maxSmall {
+      background-size: auto;
+    }
+    @include maxMobile {
+      background-position: center;
+      background-size: cover;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+  .item {
+    .ico {
+      width: 60px;
+      height: 60px;
+      border-radius: 22px;
+      border: 1px solid rgba($white-color, 0.15);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      .tio {
+        color: $white-color;
+        font-size: 24px;
+      }
+    }
+    .title_sections {
+      margin-bottom: 2rem;
+      h2 {
+        color: $white-color;
+      }
+      p {
+        color: $light-color;
+      }
+    }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 3rem;
+    p {
+      color: $light-color;
+      font-size: 14px;
+      margin-bottom: 0.4rem;
+      a {
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.rakon_purchase {
+  position: fixed;
+  left: 40px;
+  bottom: 40px;
+  z-index: 999;
+  .btn_purch {
+    position: relative;
+    @include prefixer(transition, 0.4s, webkit moz o ms);
+    .icon {
+      width: 45px;
+      height: 45px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #89bd49;
+      border-radius: 50%;
+      vertical-align: sub;
+      img {
+        width: 18px;
+      }
+      &:before {
+        content: "";
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        background: rgba(#89bd49, 0.1);
+        z-index: -1;
+        @include prefixer(
+          animation,
+          pulse 2.2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite,
+          webkit moz o ms
+        );
+      }
+    }
+    .txt {
+      padding: 0 0.6rem;
+      font-size: 15px;
+      font-weight: 500;
+      color: $white-color;
+      opacity: 0;
+      display: inline-block;
+      @include prefixer(transition, 0.5s, webkit moz o ms);
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 65px;
+      height: 65px;
+      border-radius: 50px;
+      background: rgba(#89bd49, 0.15);
+      top: -4px;
+      left: 2px;
+      z-index: -1;
+      @include prefixer(
+        transition,
+        0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        webkit moz o ms
+      );
+    }
+    &:hover {
+      .txt {
+        opacity: 1;
+      }
+      &:after {
+        border-radius: 50px;
+        background: rgba(#89bd49, 0.85);
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include keyFrame(pulse) {
+  0% {
+    -webkit-transform: scale(1.2);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: scale(1.6);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes keyFrame (flash) {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes KeyFrame (flicker-1) {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  47.99% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  49.01% {
+    opacity: 1;
+  }
+}
